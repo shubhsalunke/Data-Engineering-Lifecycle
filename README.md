@@ -63,7 +63,7 @@ git clone https://github.com/shubhsalunke/Flask-PostgreSQL-Dockerfile.git
 ```
 
 ```bash
-cd Flask-PostgreSQL-Dockerfile
+cd Data-Engineering-Lifecycle
 ```
 
 ---
@@ -150,6 +150,10 @@ CREATE USER 'deuser'@'localhost' IDENTIFIED BY 'depass123';
 GRANT ALL PRIVILEGES ON data_lifecycle.* TO 'deuser'@'localhost';
 
 FLUSH PRIVILEGES;
+
+USE data_lifecycle;
+
+TRUNCATE TABLE sales;
 
 EXIT;
 ```
